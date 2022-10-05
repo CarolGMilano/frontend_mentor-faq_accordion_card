@@ -1,0 +1,30 @@
+@import url("card.css");
+@import url("responsividade.css");
+
+:root {
+    --azul_escuro: hsl(238, 29%, 16%);
+    --laranja_claro: hsl(14, 88%, 65%);
+    --rosa_claro: hsl(273, 75%, 66%);
+    --roxo_claro: hsl(240, 73%, 65%);
+    --roxo_escuro: hsl(237, 12%, 33%);
+    --cinza: hsl(240, 6%, 50%);
+    --cinza_borda: hsla(240, 6%, 50%, 0.2);
+    --cinza_claro: hsl(240, 5%, 91%);
+
+    --KumbhSans: 'Kumbh Sans', sans-serif;;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(var(--rosa_claro), var(--roxo_claro));
+    font-family: var(--KumbhSans);
+}
+
+.escondido {
+    display: none;
+}
+
+.negrito {
+    font-weight: bold;
+}

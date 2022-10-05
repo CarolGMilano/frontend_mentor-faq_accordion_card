@@ -1,0 +1,90 @@
+@media screen and (min-width: 700px) {
+    .card {
+        flex-direction: row;
+        width: 1000px;
+        height: 500px;
+        position: relative;
+    }
+
+    .card__imagem {
+        width: 50%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .card__imagem--logoMobile,
+    .card__imagem--sombraMobile {
+        display: none;
+    }
+
+    .card__imagem--logoDesktop {
+        display: block;
+        background: url("../img/illustration-woman-online-desktop.svg") no-repeat;
+        background-size: 455px, 370px;
+        width: 455px;
+        height: 370px;
+        position: absolute;
+        left: -70px;
+        top: 70px;
+    }
+
+    .card__imagem--sombraDesktop {
+        display: block;
+        background: url("../img/bg-pattern-desktop.svg") no-repeat;
+        background-size: 1000px 1000px;
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        left: -610px;
+        top: -340px;
+    }
+
+    .card__imagem--caixaDesktop {
+        display: block;
+        background: url("../img/illustration-box-desktop.svg") no-repeat;
+        background-size: 200px 200px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 180px;
+        left: -100px;
+    }
+
+    .card__faq {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .faq__titulo {
+        text-align: start;
+        padding-top: 0;
+    }
+
+    .faq__lista {
+        padding: 0 5rem 0 0;
+    }
+
+    .lista__item:hover {
+        cursor: pointer;
+
+    }
+    
+    .item__pergunta {
+        font-size: 16px;
+        transition: .4s;
+    }
+
+    .item__pergunta:hover {
+        color: var(--laranja_claro);
+    }
+
+    .item__resposta {
+        font-size: 15px;
+    }
+
+    .btn__pergunta {
+        background-size: 12px 10px;
+    }
+}

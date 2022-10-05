@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    width: 90%;
+    background-color: var(--cinza_claro);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__imagem {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.card__imagem--logoMobile {
+    background: url("../img/illustration-woman-online-mobile.svg") no-repeat;
+    background-size: 265px, 200px;
+    width: 265px;
+    height: 200px;
+    position: absolute;
+    top: -120px;
+    left: 35px;
+}
+
+.card__imagem--sombraMobile {
+    background: url("../img/bg-pattern-mobile.svg") no-repeat;
+    background-size: 265px, 200px;
+    width: 265px;
+    height: 200px;
+    position: absolute;
+    top: -5px;
+    left: 35px;
+}
+
+.card__imagem--logoDesktop,
+.card__imagem--sombraDesktop,
+.card__imagem--caixaDesktop {
+    display: none;
+}
+
+.faq__titulo {
+    font-size: 40px;
+    text-align: center;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+}
+
+.faq__lista {
+    padding: 0 1.5rem 3rem 1.5rem;
+}
+
+.faq__lista--item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--cinza_borda);
+}
+
+.lista__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__pergunta {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--roxo_escuro);
+}
+
+.btn__pergunta {
+    background: url("../img/icon-arrow-down.svg") no-repeat center;
+    background-size: 10px 8px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    transition: transform .5s;
+}
+
+.item__resposta {
+    padding: .5rem 2rem 0 0;
+    font-size: 14px;
+    color: var(--cinza);
+}
